@@ -83,25 +83,25 @@ table {
 /* ------------------ ( - Helpers ) ------------------ */
 
 * {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	/* Include padding & borders in width declarations for easier sizing of elements */
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* Include padding & borders in width declarations for easier sizing of elements */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ::selection {
-	background-color: #000000; /* Change as desired. */
-	color: #ffffff; /* Change as desired. */
-	text-shadow: none;
+  background-color: #000000; /* Change as desired. */
+  color: #ffffff; /* Change as desired. */
+  text-shadow: none;
 }
 
 ::-moz-selection {
-	background-color: #000000; /* Change as desired. */
-	color: #ffffff; /* Change as desired. */
-	text-shadow: none;
+  background-color: #000000; /* Change as desired. */
+  color: #ffffff; /* Change as desired. */
+  text-shadow: none;
 }
 
 html {
