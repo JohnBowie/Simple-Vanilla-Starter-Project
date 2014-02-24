@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*
+  Author: John Bowie
+  Date: 24 February 2014
+  Project: Simple Vanilla Starter Project
+*/
+
+/*
+  Table of Contents
+  =============================================================================
+  - Color Scheme
+  - Reset Stylesheet
+  - Helpers
+  - Typography
+  - Headers
+  - Links
+  - Lists
+  - Images
+  - Form Styles
+  - Layout
+    - Template
+    - Header
+    - Site Navigation
+    - Main Layout
+    - Footer
+  - Misc
+  - Media Queries
+  - Print Styles
+*/
+
+
+
+
+/* ------------------ ( - Color Scheme ) ------------------ */
+
+/*
+  Color hex codes with a simple color description -
+  #ffffff; - white
+  #000000; - black
+*/
+
+
+
+
+/* ------------------ ( - Reset Stylesheet ) ------------------ */
+
+/*
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License:none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/* ------------------ ( - Helpers ) ------------------ */
+
+* {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/* Include padding & borders in width declarations for easier sizing of elements */
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+::selection {
+	background-color: #000000; /* Change as desired. */
+	color: #ffffff; /* Change as desired. */
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background-color: #000000; /* Change as desired. */
+	color: #ffffff; /* Change as desired. */
+	text-shadow: none;
+}
+
+html {
+  overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+}
+
+body, input, button { -webkit-font-smoothing: antialiased; }
+
+img {
+  border: 0;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix { *zoom: 1; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Removes default scroll bars in IE */
+textarea {
+  overflow: auto;
+}
+
+/* Removes resize handle in WebKit Browsers */
+textarea {
+  resize: none;
+}
+
+
+
+
+/* ------------------ ( - Typography ) ------------------ */
+
+/*
+  Base Font Size (16px)
+  Line Height (24px)
+*/
+
+html { font: 100%/1.5 Helvetica, Arial, sans-serif; }
+
+input, select, textarea { font:inherit; }
+
+p, blockquote {
+  font-size: 1em;
+  margin: 0 0 1.5em;
+  line-height: 1.5;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+b, strong { font-weight: bold; }
+
+i, em { font-style: italic; }
+
+small { font-size: 85%; }
+
+code, pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+blockquote { font-style: italic; }
+
+blockquote:before {
+  content: "\201C";
+  display: inline-block;
+  padding-right: .4em;
+}
+
+
+
+
+/* ------------------ ( - Headers ) ------------------ */
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Example usage. */
+/*h1, .alpha {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+h2, .beta {
+  font-size: 2.25em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 0.6666666666666666em;
+}
+
+h3, .gamma {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h4, .delta {
+  font-size: 1.3125em;
+  line-height: 1.1428571428571428;
+  margin-bottom: 1.1428571428571428em;
+}
+
+h5, .epsilon {
+  font-size: 1.125em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 1.3333333333333333em;
+}
+
+h6, .zeta {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}*/
+
+
+
+
+/* ------------------ ( - Links ) ------------------ */
+
+a {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+
+
+
+/* ------------------ ( - Lists ) ------------------ */
+
+dl, ol, ul {
+  font-size: 1em;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+dd, dt, li {
+  line-height: 1.5;
+  margin: 0;
+}
+
+li ul, li ol {
+  margin-bottom: 0;
+}
+
+
+
+
+/* ------------------ ( - Images ) ------------------ */
+
+img {
+  height: auto;
+}
+
+embed, iframe, object {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+
+/* ------------------ ( - Form Styles ) ------------------ */
+
+/* Form defaults go here... */
+
+
+
+
+/* ------------------ ( - Layout ) ------------------ */
+
+/* Page styles go here... */
+/*---[ - Template ]---*/
+/*---[ - Header ]---*/
+/*---[ - Main Layout ]---*/
+/*---[ - Footer ]---*/
+
+
+
+
+/* ------------------ ( - Misc ) ------------------ */
+
+/* Animations */
+a {
+  -webkit-transition: color 0.3s;
+     -moz-transition: color 0.3s;
+      -ms-transition: color 0.3s;
+       -o-transition: color 0.3s;
+          transition: color 0.3s;
+}
+
+input, textarea {
+  -webkit-transition: border-color 0.3s;
+     -moz-transition: border-color 0.3s;
+      -ms-transition: border-color 0.3s;
+       -o-transition: border-color 0.3s;
+          transition: border-color 0.3s;
+}
+
+
+
+
+/* ------------------ ( - Media Queries ) ------------------ */
+
+/*
+@media only screen and (max-width: ...)
+{
+
+}
+*/
+
+
+
+/* ------------------ ( - Print Styles ) ------------------ */
+
+/*
+	https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+*/
+
+@media print {
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    text-shadow: none !important;
+  }
+
+  p, h2, h3 {
+    orphans: 3; /* http://css-tricks.com/almanac/properties/o/orphans/ */
+    widows: 3; 	/* http://css-tricks.com/almanac/properties/w/widows/ */
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
